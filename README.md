@@ -3,4 +3,4 @@ PES packet extractor
 
 ### Example
 
-./pesx.py path/to/file.ts
+`$ ./pesx.py path/to/file.ts`
