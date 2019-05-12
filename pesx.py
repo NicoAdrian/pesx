@@ -16,6 +16,7 @@ with open(sys.argv[1], "rb") as fd:
         dat = pkt[4:]
         if not sync:
             print("No sync byte !")
+            break
         if not payload:
             pass
         elif not afc:
