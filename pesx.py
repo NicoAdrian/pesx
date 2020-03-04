@@ -43,7 +43,7 @@ class PESPacket:
 
 
 def main():
-    assert len(argv) > 1, "Usage: pesx.py <path/to/ts>"
+    assert len(argv) > 1, "missing path to ts file"
     buffer = 0
     ts_pkts = []
     pes_pkts = []
