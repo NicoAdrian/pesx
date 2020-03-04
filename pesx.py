@@ -32,7 +32,11 @@ class PESPacket:
     def __init__(self, ts_pkt):
         self.ts_pkt = ts_pkt
         self.specified_length = unpack(">H", ts_pkt.payload[4:6])[0]
-        self.length = len(ts_pkt.payload) if self.specified_length == 0 else self.specified_length + 6
+        self.length = (
+            len(ts_pkt.payload)
+            if self.specified_length == 0
+            else self.specified_length + 6
+        )
         self.header = b""
         self.data = b""
         self.bytes = b""
