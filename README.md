@@ -1,7 +1,7 @@
 # pesx
 MPEG-2 PES packet eXtractor
 
-Prints PES packts to stdout
+Prints PES packets to stdout
 
 ### Example
 
