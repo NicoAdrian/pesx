@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from sys import argv, stdout
 from struct import unpack
 
@@ -42,7 +43,7 @@ class PESPacket:
 
 
 def main():
-    assert len(argv) > 1, "missing path to ts file"
+    assert len(argv) > 1, "Usage: pesx.py <path/to/ts>"
     buffer = 0
     ts_pkts = []
     pes_pkts = []
