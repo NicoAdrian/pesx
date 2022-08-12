@@ -5,4 +5,6 @@ Prints PES packets to stdout
 
 ### Example
 
-`$ ./pesx.py path/to/ts`
+```
+$ ./pesx.py path/to/ts
+```
